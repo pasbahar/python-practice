@@ -1,3 +1,29 @@
+'''Given an array of 0 and 1. In how many iterations it is possible that the whole array can be filled with 1's, if in a single iteration immediate neighbours of 1's can be filled.
+
+Input:
+The first line contains a single integer T, the number of test cases. The first line consists of a single integer N(length of array). The next line consists of a N spaced integers(either 0 or 1).
+
+Output:
+For each testcase, print the minimum number of iterations to fill the whole array with 1's (if possible). If it is not possible to fill the array with 1s, print "-1" (without quotes).
+
+Constraints:
+1 <= T <= 103
+1 <= N <= 107
+0 <= Ai <= 1
+
+Examples:
+Input:
+2
+4
+1 0 1 0
+17
+0 0 1 1 0 0 1 1 0 1 1 1 1 0 0 0 1
+Output:
+1
+2
+
+Explanation:
+Test Case 1: Both the 0s has 1 as their immediate neighbour. So, we only need one iteration to fill the array with 1.'''
 import math
 for i in range(int(input())):
     n=int(input())

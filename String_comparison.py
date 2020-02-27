@@ -1,3 +1,61 @@
+'''In a native language the increasing order of priority of characters is a, b, c, d, e, f, g, h, i, j, k, l, m, n, ’ng’ , o, p, q, r, s, t, u, v, w, x, y, z. You are given two strings string1 and string2 and your task is to compare them on the basis of the given priority order.
+
+Print ‘0’ if both the strings are equal, ‘1’ if string1 is greater than string2 and ‘-1’ if string1 is lesser than string2. All the strings consist of lowercase English alphabets only.
+
+ 
+
+Input:
+
+The first line of the input contains a single integer T denoting the number of test cases. Each of the test case consists of a single line containing space separated two strings string1 and string2.
+ 
+
+Output:
+
+For each test case, print the required output in a new line.
+ 
+
+Constraints:
+
+1 <= T <= 1000
+
+1 <= |string1, string2| <= 10^8
+ 
+
+Example:
+
+Input:
+
+3
+
+adding addio
+
+abcng abcno
+
+abngc abngc
+
+Output:
+
+-1
+
+1
+
+0
+
+Explanation:
+
+Assume 0-based indexing.
+
+For the 1st test case:
+
+The Strings differ at index = 4. Comparing ‘ng’ and ‘o’, we have string1 < string2.
+
+For the 2nd test case:
+
+The Strings differ at index = 3. Comparing ‘ng’ and ‘n’, we have string1 > string2.
+
+For the 3rd test case:
+
+Both the strings are same.'''
 def compare(s1,s2):
     if s1==s2:
         return 0

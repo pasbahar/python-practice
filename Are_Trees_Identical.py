@@ -1,3 +1,40 @@
+'''Given two binary trees, the task is to find if both of them are identical or not. 
+
+Input:
+
+First line of input contains the number of test cases T. For each test case, there will be two lines of input each of which is a string representing the tree as described below: 
+
+The values in the string are in the order of level order traversal of the tree where, numbers denotes node values, and a character “N” denotes NULL child.
+
+For example:
+
+ 
+
+For the above tree, the string will be: 1 2 3 N N 4 6 N 5 N N 7 N
+Output:
+The function should return true if both trees are identical else false.
+
+User task:
+Since this is a functional problem you don't have to worry about input, you just have to complete the function isIdentical() that takes two roots as parameters and returns true or false. The printing is done by the driver code.
+
+Constraints:
+1 <= T <= 100
+1 <= Number of nodes <= 100
+1 <=Data of a node <= 1000
+
+Example:
+Input:
+3
+1 2 3
+1 2 3
+1 2 3
+1 3 2
+1 2 3 N 3 N 10
+1 2 3 N 3 N 10
+Output
+Yes
+No
+Yes'''
 def isIdentical(root1, root2):
     if root1==None and root2==None:
         return 1
